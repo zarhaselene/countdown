@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graduation countdown</title>
+    <title>Graduation Countdown</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="countdown">
+      <!-- Days section -->
       <div class="time-section" id="days">
         <div class="time-group">
+          <!-- Each digit container contains elements for flip animation -->
+          <div class="digit-container">
+            <div class="digit-display">
+              <!-- Static top part of the digit display -->
+              <div class="digit-display__top">0</div>
+              <!-- Static bottom part of the digit display -->
+              <div class="digit-display__bottom">0</div>
+              <!-- Overlay for animation (top and bottom) -->
+              <div class="digit-overlay">
+                <div class="digit-overlay__top">0</div>
+                <div class="digit-overlay__bottom">0</div>
+              </div>
+            </div>
+          </div>
+          <!-- Additional digit containers for multi-digit values -->
           <div class="digit-container">
             <div class="digit-display">
               <div class="digit-display__top">0</div>
@@ -33,6 +49,8 @@
         </div>
         <p class="time-label">Days</p>
       </div>
+
+      <!-- Hours section -->
       <div class="time-section" id="hours">
         <div class="time-group">
           <div class="digit-container">
@@ -58,6 +76,8 @@
         </div>
         <p class="time-label">Hours</p>
       </div>
+
+      <!-- Minutes section -->
       <div class="time-section" id="minutes">
         <div class="time-group">
           <div class="digit-container">
@@ -83,6 +103,8 @@
         </div>
         <p class="time-label">Minutes</p>
       </div>
+
+      <!-- Seconds section -->
       <div class="time-section" id="seconds">
         <div class="time-group">
           <div class="digit-container">
@@ -109,7 +131,6 @@
         <p class="time-label">Seconds</p>
       </div>
     </main>
-
     <script src="/app.js"></script>
   </body>
 </html>
