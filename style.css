@@ -8,6 +8,7 @@ body {
   padding-top: 100px;
 }
 
+/* Main countdown layout */
 .countdown {
   margin: 100px auto;
   width: 50%;
@@ -16,16 +17,19 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Styling for individual time sections (Days, Hours, Minutes, Seconds) */
 .time-section {
   text-align: center;
   font-size: 30px;
 }
 
+/* Flex container for grouping digits in each section */
 .time-group {
   display: flex;
   gap: 10px;
 }
 
+/* Individual digit container styling */
 .digit-container {
   display: block;
   font-size: 100px;
@@ -33,11 +37,13 @@ body {
   width: 100px;
 }
 
+/* Styling for the digit display (top and bottom sections) */
 .digit-display {
   position: relative;
   height: 100%;
 }
 
+/* Top and bottom parts of the digit display */
 .digit-display__top,
 .digit-display__bottom {
   overflow: hidden;
@@ -47,18 +53,21 @@ body {
   position: relative;
 }
 
+/* Top part of the digit display */
 .digit-display__top {
   background-color: #111;
   color: #eee;
   line-height: 1.5;
 }
 
+/* Bottom part of the digit display */
 .digit-display__bottom {
   background-color: #333;
   color: #fff;
   line-height: 0;
 }
 
+/* Overlay for flip animation */
 .digit-overlay {
   position: absolute;
   top: 0;
@@ -67,6 +76,7 @@ body {
   perspective: 400px;
 }
 
+/* Top and bottom parts of the overlay for animation */
 .digit-overlay__top,
 .digit-overlay__bottom {
   position: absolute;
@@ -76,6 +86,7 @@ body {
   height: 50%;
 }
 
+/* Top part of the overlay */
 .digit-overlay__top {
   top: 0;
   line-height: 1.5;
@@ -84,6 +95,7 @@ body {
   transform-origin: bottom;
 }
 
+/* Bottom part of the overlay */
 .digit-overlay__bottom {
   bottom: 0;
   line-height: 0;
@@ -93,14 +105,15 @@ body {
   transform-origin: top;
 }
 
+/* Flip animation on the overlay */
 .digit-overlay.flip .digit-overlay__top {
   animation: flip-top 0.8s linear;
 }
 .digit-overlay.flip .digit-overlay__bottom {
   animation: flip-bottom 0.8s linear;
 }
-/* Animations */
 
+/* Keyframes for flip animations */
 @keyframes flip-top {
   0% {
     transform: rotateX(0deg);
