@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.countdown {
+  margin: 100px auto;
+  width: 50%;
+  display: flex;
+  gap: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.time-section {
+  text-align: center;
+  font-size: 30px;
+}
+
+.time-group {
+  display: flex;
+  gap: 10px;
+}
+
+.digit-container {
+  display: block;
+  font-size: 100px;
+  font-weight: 900;
+  width: 100px;
+}
+
+.digit-display {
+  position: relative;
+  height: 100%;
+}
+
+.digit-display__top,
+.digit-display__bottom {
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+
+.digit-display__top {
+  background-color: #111;
+  color: #eee;
+  line-height: 1.5;
+}
+
+.digit-display__bottom {
+  background-color: #333;
+  color: #fff;
+  line-height: 0;
+}
+
+.digit-overlay {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  perspective: 400px;
+}
+
+.digit-overlay__top,
+.digit-overlay__bottom {
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+}
+
+.digit-overlay__top {
+  top: 0;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #111;
+  transform-origin: bottom;
+}
+
+.digit-overlay__bottom {
+  bottom: 0;
+  line-height: 0;
+  color: #eee;
+  background-color: #333;
+  border-top: 2px solid black;
+  transform-origin: top;
+}
+
+.digit-overlay.flip .digit-overlay__top {
+  animation: flip-top 0.8s linear;
+}
+.digit-overlay.flip .digit-overlay__bottom {
+  animation: flip-bottom 0.8s linear;
+}
+/* Animations */
+
+@keyframes flip-top {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50%,
+  100% {
+    transform: rotateX(-90deg);
+  }
+}
+
+@keyframes flip-bottom {
+  0%,
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}
