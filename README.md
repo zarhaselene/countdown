@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: (https://zarhaselene.github.io/countdown)
+- Live Site URL: (https://zarhaselene-countdown.netlify.app/)
 
 ## My process
 
