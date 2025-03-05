@@ -1,4 +1,4 @@
-# Frontend Mentor - Launch countdown timer solution
+# Frontend Mentor - Countdown timer solution
 
 This is a solution to the [Launch countdown timer challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -7,7 +7,7 @@ This is a solution to the [Launch countdown timer challenge on Frontend Mentor](
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
+  - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -26,9 +26,9 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-### Links
+### Link
 
-- Live Site URL: (https://zarhaselene.github.io/countdown)
+- Live Site URL: (https://zarhaselene-countdown.netlify.app/)
 
 ## My process
 
